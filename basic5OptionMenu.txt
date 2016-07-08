@@ -1,0 +1,36 @@
+#This is a powershell utility with multiple functions and prompt and menu allowing the user to select what they would like to do.
+#Created by James Cox & Colten O'Conner
+#Created: 7/8/2016 Last Edited: 7/8/2016 by James Cox
+#Created for: The Choctaw Nation
+
+$command = 'nothing'
+While ($command -ne 'quit')
+{
+Write-Host 'What would you like to do?'
+Write-Host '1. Create new Active Directory User.'
+Write-Host '2. Create new Active Directory Group.'
+Write-Host '3. Add Active Directory User to Group.'
+Write-Host '4. Delete Active Directory User.'
+Write-Host '5. Delete Active Directory User.'
+Write-Host 'Please enter the number next to the option you need.'
+Write-Host 'e.q. - "1" for Create new Active Directory User. "quit" to exit.'
+Write-Host ''
+
+$command = Read-Host
+
+
+switch ($command)
+	{ 
+        1 {"You have selected option $command
+				"} 
+        2 {"You have selected option $command
+				"} 
+        3 {"You have selected option $command
+				"} 
+        4 {"You have selected option $command
+				"}
+	5 {"You have selected option $command
+				"}
+	}
+ 
+}
